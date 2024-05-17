@@ -1,0 +1,101 @@
+body{
+    font-family: poppins;
+    background-image: url(https://drive.google.com/file/d/1hVodv8IqbLjFA0nToladnzU1vjzf_l4G/view?usp=sharing);
+}
+
+.my-button { 
+    display: inline-block;
+    padding: 10px 21px;
+    background-color: #5960E6; 
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.my-button:hover {
+    background-color: #5359d7; /* Warna latar belakang saat hover */
+}
+
+.bg-purple{
+    background-color: #DFE3F9;
+    background-image: url(https://drive.google.com/file/d/1hVodv8IqbLjFA0nToladnzU1vjzf_l4G/view?usp=sharing);
+}
+
+.navbar{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 400px;
+    height: 70px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.nav-img{
+    padding-top: 19px;
+    padding-left: 50px;
+}
+
+.nav-img-1{
+    width: 60px;
+}
+
+.nav-text{
+    padding-left: 12px;
+    color: black;
+    font-size: 25px;
+}
+
+.landing-page{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+}
+
+.co-1{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.font-banner-1{
+    font-size: 60px;
+    color: black;
+    padding: 15px;
+    line-height: 0%;
+}
+
+.font-banner-2{
+    font-size: 60px;
+    color: #5960E6;
+    padding: 15px;
+    line-height: 0%;
+}
+
+
+.font-banner-3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: black;
+    float: left;
+}
+
+.banner-img-1{
+    padding-top: 0%;
+    height: 400px;
+    width: auto;
+    padding-bottom: 50px;
+}
+
+.b-1{
+    margin-left: 15px;
+    padding-top: 20px;
+}
