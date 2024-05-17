@@ -82,6 +82,7 @@ body{
     margin: auto;
     margin-right: 40px;
     display: inline-block;
+    padding-top: 5px;
     font-weight: bold;
     font-size: 16px;
     color: #079D75;
@@ -196,7 +197,7 @@ body{
     color: white;
     background-color: #A1A7F0;
     border-radius: 20px;
-    text-alignt: justify;
+    text-align: justify;
     line-height: 1.5;
   }
 
@@ -210,26 +211,38 @@ footer{
   padding-bottom: 30px;
   padding-right: 50px;
   padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.text-footer h5{
+.text-footer{
   float: left;
   color: white;
   font-weight: bold;
   font-size: 16px;
+  padding-top: 5px;
 }
 
-  .list-footer li {
-    list-style: none; 
-    float: right;
+  .list-footer{
+    text-decoration: none;
+    line-height: 1.5;
+    font-style: italic;
   }
-
-  .list-footer li a {
+  
+  .ds{
     text-decoration: none;
     color: white;
-    line-height: 1.5;
-  } 
+  }
 
+  .team{
+    text-decoration: none;
+    color: white;
+  }
+
+  .github{
+    text-decoration: none;
+    color: white;
+  }
   .parent-copyright{
     display: flex;
     justify-content: center;
@@ -237,9 +250,5 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
-    
-  }
-
-  .parent-copyright .copyright p{
-    font-size: 16px;
+    font-size: 10px;
   }
