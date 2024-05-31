@@ -201,6 +201,9 @@ body{
     line-height: 1.5;
   }
 
+
+  
+
 footer{
  margin-top: 50px; 
 }
@@ -226,7 +229,6 @@ footer{
   .list-footer{
     text-decoration: none;
     line-height: 1.5;
-    font-style: italic;
   }
   
   .ds{
@@ -252,3 +254,8 @@ footer{
     color: white;
     font-size: 10px;
   }
+
+
+
+
+ 
