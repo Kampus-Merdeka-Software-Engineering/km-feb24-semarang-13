@@ -122,20 +122,20 @@ nav {
 }
 
 .com-img-1{
-    width: 400px;
-    height: 480px;
+    width: 250px;
+    height: 350px;
 }
 
 .com-img-2{
-    width: 400px;
-    height: 480px;
+    width: 250px;
+    height: 350px;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 .com-img-3{
-    width: 400px;
-    height: 480px;
+    width: 250px;
+    height: 350px;
 }
 
 
@@ -151,7 +151,6 @@ nav {
 .grid-boxes{
     display: flex;
     flex-wrap: wrap;
-    flex-gap: 4px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   width: fit-content; /* Optional: Set a fixed width for the container */
 
@@ -161,7 +160,7 @@ nav {
     /* Assuming your grid-boxes have the same width, you can remove these styles if needed */
     width: 45%; /* Set width to half for two columns */
     border-radius: 15px;
-    padding: 10px;
+    padding: 70px;
     font-size:20px;
     font-weight: bold;
     color: white;

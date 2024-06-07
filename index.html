@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superstore Dataset</title>
-    <!-- Data Tables -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css"
-    />
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="https://code.jquery.com/jquery-3.5.1.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"
-    ></script>
-
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdeliver.net/npm/chart.js"></script>
+    <title>Superstore Sales Line Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <table id="sales-table" border="1" style="width: 30%">
-        <thead>
-            <tr>
-                <th>Category</th>
-                <th>Sub Category</th>
-                <th>Sales</th>
-            </tr>
-        </thead>     
-        <tbody id="sales-table-body">
-            
-        </tbody>   
-    </table>
-    <table id="product-table" border="1" style="width: 30%">
-        <thead>
-            <tr>
-                <th>Product Name</th>
-                <th>Sales</th>
-            </tr>
-        </thead>     
-        <tbody id="product-table-body">
-            
-        </tbody>   
-    </table>
-    <script src="script.js">
+    <h2>Superstore Sales Line Chart</h2>
+    <canvas id="salesChart" width="400" height="200"></canvas>
+
+    <script>
+        // Fetch data from superstore.json
+        fetch('superstore.json')
+            .then(response => response.json())
+            .then(data => {
+                // Process the data to get the necessary format for Chart.js
+                const labels = data.map(item => item.order_date);
+                const salesData = data.map(item => parseFloat(item.sales));
+
+                // Create line chart
+                const ctx = document.getElementById('salesChart').getContext('2d');
+                const salesChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Sales',
+                            data: salesData,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Order Date'
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Sales'
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
     </script>
 </body>
 </html>
