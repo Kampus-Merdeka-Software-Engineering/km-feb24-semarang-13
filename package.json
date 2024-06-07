@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chart.js-plugin-labels-dv": "^5.0.1-beta",
+    "hotel-datepicker": "^4.10.0",
+    "http-server": "^14.1.1",
+    "papaparse": "^5.4.1"
+  }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family:"Poppins", sans-serif;
+}
+
+body{
+    background-color: #DFE3F9;
+}
+  
+  .filter-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* .dropdown .btn.btndropdown-toggle {
+    background-color: white !important;
+    color: black !important;
+} */
+
+.container-chart{
+    padding: 20px 15px 20px 15px;
+}
+
+.container-chart h2{
+    font-size: 22px; 
+    font-weight: bold;
+}
+
+.container-chart p{
+    font-size:16px; 
+    font-weight: bold;
+}
+
+.col{
+    padding: 0px 20px 0px 20px;
+}
+
+.table-container{
+    padding: 0px 20px 0px 20px;
+}
+
+
+/* Styling untuk sales table */
+#sales-table {
+    width: 100%;
+    border-collapse: collapse; /* Menggabungkan garis border */
+  }
+  
+  #sales-table th, #sales-table td {
+    padding: 10px; /* Padding di dalam sel */
+    text-align: center; /* Arahkan teks ke kiri */
+    border: 1px solid #ddd; /* Border tipis abu-abu */
+  }
+  
+  #sales-table th {
+    background-color: #5960E6; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+  }
+  
+  #sales-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna latar belakang untuk baris genap */
+  }
+  
+  #sales-table tbody tr:hover {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+  }
+
+
+/* Styling untuk product table */
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Warna latar belakang tabel */
+    border: 1px solid #ccc; /* Border tipis abu-abu */
+    margin-top: 20px; /* Jarak atas */
+  }
+  
+  #product-table th, #product-table td {
+    padding: 10px; /* Padding di dalam sel */
+    text-align: left; /* Arahkan teks ke kiri */
+    border: 1px solid #ccc; /* Border tipis abu-abu */
+  }
+  
+  #product-table th {
+    background-color: #5960E6; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+  }
+  
+  #product-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna latar belakang untuk baris genap */
+  }
+  
+  #product-table tbody tr:hover {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+  }
+
+
+  .pie-chart {
+    display: flex;
+    justify-content: center; /* Mengatur canvas ke tengah secara horizontal */
+    align-items: center; /* Mengatur canvas ke tengah secara vertikal */
+    height: 300px; /* Atur tinggi sesuai kebutuhan */
+    margin-top: 20px; /* Jarak atas */
+  }
+
+  .bar-chart {
+    display: flex;
+    justify-content: center; /* Mengatur canvas ke tengah secara horizontal */
+    align-items: center; /* Mengatur canvas ke tengah secara vertikal */
+    height: 300px; /* Atur tinggi sesuai kebutuhan */
+    margin-top: 20px; /* Jarak atas */
+  }
