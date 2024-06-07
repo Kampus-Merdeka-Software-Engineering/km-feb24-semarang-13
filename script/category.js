@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("./superstore.json")
+    fetch("assets/js/superstore.json")
       .then(response => response.json())
       .then(data => {
         console.log('data: ', data)

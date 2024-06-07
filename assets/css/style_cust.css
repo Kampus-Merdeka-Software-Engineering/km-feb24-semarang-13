@@ -187,6 +187,9 @@ p {
 
 /* ==== Header  = Start ===== */
 .header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(to right, #5960E6, #8E99EB);
     padding: 5px 80px;
     position: fixed;
@@ -195,19 +198,29 @@ p {
     z-index: 9999;
 }
 
-.header_part h5 {
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo h5 {
     color: #ffffff;
-    padding: 18px;
+    margin: 0;
 }
 
 .header_part img {
-    float: left;
     height: 60px;
     border-radius: 50%;
+    margin-right: 10px; /* Tambahkan margin kanan untuk memberi jarak di antara img dan h5 */
 }
 
 ul {
     display: flex;
+    justify-content: flex-end; /* Menggeser ul ke kanan */
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -220,7 +233,13 @@ a {
     text-decoration: none;
 }
 
-ul>li>a:hover {
+b{
+    padding: 0 7px;
+    color: white;
+    text-decoration: none;  
+}
+
+ul > li > a:hover {
     color: #FFDE3D;
 }
 
