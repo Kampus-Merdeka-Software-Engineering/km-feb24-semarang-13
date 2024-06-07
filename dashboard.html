@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superstore Dataset</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link href="/path/to/css/hotel-datepicker.min.css" rel="stylesheet">
+    <script src="/path/to/cdn/fecha.min.js"></script>
+    <script src="/path/to/js/hotel-datepicker.min.js"></script>"
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css"
+    />
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div>
+  <div class="filter-section">
+    <div  class="row align-items-start justify-content-center">
+        <!-- <div>
+            <h2 style="font-weight: bold;">Overview</h2>
+        </div> -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; color:black;">
+              Select Date Range
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; color:black;">
+              Select Year Filter
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+  </div>
+</div>
+  <div class="container-chart">
+    <div class="row align-items-start">
+      <div class="col">
+          <h2>Sales By Category & Sub-Category</h2>
+          <p>Total sales amount based on categories and sub-categories.</p>
+          <div class="table-container" >
+            <table id="sales-table" border="1">
+              <thead>
+                  <tr>
+                      <th>Category</th>
+                      <th>Sub Category</th>
+                      <th>Sales</th>
+                  </tr>
+              </thead>     
+              <tbody id="sales-table-body">
+                <script src="category.js"></script> 
+              </tbody>   
+            </table>
+          </div>
+      </div>
+      <div class="col">
+          <h2>Product Sales Performance</h2>
+          <p>Performance of best-selling and underperforming products</p>
+          <div class="table-container">
+            <table id="product-table" border="1">
+              <thead>
+                  <tr>
+                      <th>Product Name</th>
+                      <th>Sales</th>
+                  </tr>
+              </thead>     
+              <tbody id="product-table-body">
+                <script src="product.js"></script>
+              </tbody>   
+            </table>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-chart">
+    <div class="row align-items-start">
+      <div class="col">
+        <div style="margin-top: 30px;">
+            <h2>Monthly Sales Performance</h2>
+            <p>Sales performance over 4 years based on the monthly sales.</p>
+            <!-- <canvas class="box" id="ship-mode-orders" style="height:500;"></canvas>
+            <script src="shipmode.js"></script> -->
+        </div>
+      </div>
+      <div class="col" style="padding-left: 3px;">
+        <div style="margin-top: 30px;">
+            <h2>Sales by State</h2>
+            <p>The distribution of consumer across various states based on the number of orders.</p>
+            <!-- <canvas class="box" id="sales-by-segment" style="width: 150px;"></canvas>
+            <script src="segmentation.js"></script> -->
+        </div>
+      </div>        
+    </div>
+    <div class="container-chart">
+      <div class="row align-items-start">
+        <div class="col">
+          <div style="margin-top: 30px;">
+              <h2>Sales by Segment Customers</h2>
+              <p>Total sale based on segmentation.</p>
+              <div class="pie-chart">
+                <canvas class="box" id="sales-by-segment"></canvas>
+                <script src="segmentation.js"></script>
+              </div>
+          </div>
+        </div>
+        <div class="col" style="padding-left: 3px;">
+          <div style="margin-top: 30px;">
+              <h2>Ship Mode</h2>
+              <p>The most commonly used shipping mode based on customer preferences.</p>
+              <div class="bar-chart">
+                <canvas class="box" id="ship-mode-orders"></canvas>
+                <script src="shipmode.js"></script>
+              </div>
+          </div>
+        </div>        
+      </div>
+  </div>
+</div>
+    
+    
+</body>
+</html>
