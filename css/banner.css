@@ -254,7 +254,6 @@ ul > li > a:hover {
 
 }
 
-<<<<<<< HEAD
 .customerDist{
     padding:140px 70px 140px 70px;
 
@@ -263,20 +262,6 @@ ul > li > a:hover {
 .div-2 {
     gap: 20px;
     display: flex;
-=======
-.box1, .box2, .box3, .box4 {
-    /* Assuming your grid-boxes have the same width, you can remove these styles if needed */
-    width: 45%; /* Set width to half for two columns */
-    border-radius: 15px;
-    padding: 70px;
-    font-size:20px;
-    font-weight: bold;
-    color: white;
-    display: flex; /* Enable flexbox for inner content positioning */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: flex-end; /* Align content at the bottom */
-  align-items: center; /* Center content horizontally */
->>>>>>> cb6c97eac47de2a6345578cb4b3f86c3ce71928a
   }
   @media (max-width: 991px) {
     .div-2 {
