@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        .footer-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.slack-git,
+.msib {
+    display: flex;
+    align-items: center;
+}
+
+.slack-git a,
+.msib a {
+    margin: 0 5px;
+}
+
+.slack-img img,
+.github-img img{
+    width: 30px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: auto;
+}
+.msib-img img {
+    width: 200px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="footer-icon">
+        <div class="slack-git">
+            <a href="https://app.slack.com/" class="slack-img">
+                <img src="images/slack.png" alt="slack">
+            </a>
+            <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-semarang-13" class="github-img">
+                <img src="images/github.png" alt="github">
+            </a>
+        </div>
+        <div class="msib">
+            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="msib-img">
+                <img src="images/msib.jpg" alt="msib">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
