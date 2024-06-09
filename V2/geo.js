@@ -53,7 +53,7 @@ fetch('https://unpkg.com/us-atlas/states-10m.json')
               },
               color: {
                 axis: 'x',
-                quantize: 4,  // Menggunakan 4 skala warna
+                quantize: 8,  // Menggunakan 4 skala warna
                 // Menentukan skema warna kustom
                 legend: {
                   position: 'bottom-right',

@@ -11,6 +11,7 @@
 {
     --blue: #5960E6;
     --light_blue: #8A94EB;
+    --bw: #DFE3F9;
     --white: #fff;
     --grey: #f5f5f5;
     --black1: #222;
@@ -23,6 +24,56 @@ body
     overflow-x: hidden;
 }
 
+/* Add On Header */
+.header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  var(--blue);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .container-1{
+    display: flex;
+}
+
+.nav-img{
+    padding-top: 25px;
+    padding-left: 21px;
+    padding-right: 17px;
+    padding-bottom: 15px;
+}
+
+.nav-img-1{
+    width: 40px;
+}
+
+.nav-text{
+    padding-top: 35px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+} 
+
+.container-2
+{
+    display: flex;
+    position: end;
+}
+
+.nav-text-2 {
+    padding-top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 15px;
+    position: relative  
+}
+
+/* Batas Kode Header */
+
 .container
 {
     position: relative;
@@ -31,6 +82,8 @@ body
 
 .navigation
 {
+    /* margin-top Menurunkan navigation agar tidak bertabrakan dengan header */
+    margin-top: 1px; 
     position: fixed;
     width: 300px;
     height: 100%;
@@ -144,6 +197,8 @@ body
 /* Main */
 .main
 {
+    /* margin-top Menurunkan navigation agar tidak bertabrakan dengan header */
+    margin-top: 100px; 
     position: absolute;
     width: calc(100% - 300px);
     left: 300px;
@@ -312,16 +367,21 @@ body
     background: #fff;
     padding: 20px;
     width: 100%;
+    /* Mengatasi masalah chart membesar atau tidak responsif */
+    height: 100%; 
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+    /* Mengatasi masalah chart membesar atau tidak responsif */
+    overflow: hidden;
 }
 
-.graphBox .box .canvas .geo
+.graphBox .box .canvas
 {
-    width: 100vw;
-    height: 100vh;
+    /* Mengatasi masalah chart membesar atau tidak responsif */
+    width: 100% !important;
+    height: 100% !important;
 }
-
+    
 /* Responsive Design */
 @media (max-width: 991px)
 {

@@ -6,6 +6,27 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <!-- Header Add On -->
+        <header class="header_part">
+            <div class="container-1">
+                <div class="nav-img">
+                    <a href="index.html">
+                        <img class="nav-img-1" src="images/logo-revou.png" alt="RevoU Semarang 13">
+                    </a>
+                </div>
+                <div class="nav-text">
+                    <a class="nav-text" href="index.html"><h3><i>Semarang 13</i></h3></a>
+                </div>
+            </div>
+
+            <div class="container-2">
+                <div class="nav-text-2">
+                    <a class="nav-text-2"><h3><i>Superstore Dashboard</i></h3></a> 
+                </div>
+            </div>
+            
+        </header>
+
         <div class="container">
             <div class="navigation">
                 <ul>
@@ -25,42 +46,42 @@
                     </li>
                     <!-- 3 -->
                     <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                            <span class="title">Customers</span>
+                        <a href="https://docs.google.com/spreadsheets/d/1YR7H7yGoZ9SQKOAEIc0aQOFOfi375vB2rs23jHZ5Er0/edit#gid=151291698">
+                            <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></span>
+                            <span class="title">Google Sheets</span>
                         </a>
                     </li>
                      <!-- 4 -->
                      <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></span>
-                            <span class="title">Message</span>
+                        <a href="https://console.cloud.google.com/bigquery?project=semarang13&authuser=2&ws=!1m5!1m4!4m3!1ssemarang13!2ssuperstore!3sDataCleaned">
+                            <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                            <span class="title">Google Big Query</span>
                         </a>
                     </li>
                      <!-- 5 -->
                      <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
-                            <span class="title">Help</span>
+                        <a href="https://lookerstudio.google.com/reporting/8cb7b588-98cb-4d06-8503-642c1a92363f">
+                            <span class="icon"><ion-icon name="eye-outline"></ion-icon></span>
+                            <span class="title">Google Looker Studio</span>
                         </a>
                     </li>
                      <!-- 6 -->
                      <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                            <span class="title">Settings</span>
+                        <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-semarang-13">
+                            <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+                            <span class="title">Github</span>
                         </a>
                     </li>
                      <!-- 7 -->
                      <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                            <span class="title">Password</span>
+                        <a href="https://www.kaggle.com/datasets/vivek468/superstore-dataset-final/data">
+                            <span class="icon"><ion-icon name="globe-outline"></ion-icon></span>
+                            <span class="title">Dataset</span>
                         </a>
                     </li>
                      <!-- 8 -->
                      <li>
-                        <a href="#">
+                        <a href="http://127.0.0.1:5501/index.html">
                             <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                             <span class="title">Sign Out</span>
                         </a>
@@ -141,8 +162,6 @@
                     <div class="box">
                         <canvas id="myChart"></canvas>
                     </div>
-                    <script>
-                    </script>
 
                     <!-- Geo chart -->
                     <div class="box">
@@ -151,14 +170,15 @@
                     
 
                     <!-- Box Column 2 -->
+                    <!-- Bar Chart -->
                     <div class="box">
-                        <canvas id="myChart"></canvas>
-                        </div>
-                        <script>
-    
-                        </script>
-                        <div class="box"></div>
-                </div>
+                        <canvas id="barchart"></canvas>
+                    </div>
+                    
+                    <!-- Column Chart -->
+                    <div class="box">
+                        <canvas id="columnchart"></canvas>
+                    </div>
 
                 <!-- Data List -->
                 <!-- <div class="details">
@@ -195,6 +215,9 @@
         <!-- Import Chart JS -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
         <script src="my_chart.js"></script>
+        <script src="barchart.js"></script>
+        <script src="columnchart.js"></script>
+
         <!-- Geo Chart -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
