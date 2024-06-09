@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="container">
+    <header class="header_part">
+        <div class="container2">
             <div class="nav-img">
                 <a href="index.html">
                     <img class="nav-img-1" src="images/logo-revou.png" alt="RevoU Semarang 13">
@@ -25,8 +26,18 @@
                 <a class="nav-text" href="index.html"><h3><i>Semarang 13</i></h3></a>
             </div>
         </div>
-    </nav>
-    <div class="landing-page">
+        <div class="container3">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#company">Products</a></li>
+                <li><a href="#geo">Geography</a></li>
+                <li><a href="#cus">Customer</a></li>
+                <li><a href="#form">Help</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home-page" id="home">
         <div class="co-1"> 
             <div class="p-1">
                 <h1 class="font-banner-1">SuperStore</h1>
@@ -42,23 +53,9 @@
                 <img class="banner-img-1" src="images/banner1.png" alt="images">
             </div>
         </div>
-    </div>
-    <div>
-        <h1 class="com-text">Company's Product</h1>
-    </div>
-    <div class="com-img">
-        <a href="table_product.html">
-            <img class="com-img-1" src="images/banner-company.png" alt="image1">
-        </a>
-        <a href="table_product.html">
-            <img class="com-img-1" src="images/banner-company.png" alt="image1">
-        </a>
-        <a href="table_product.html">
-            <img class="com-img-1" src="images/banner-company.png" alt="image1">
-        </a>
-    </div>
+    </section>
 
-    <div class="customerDist">
+    <section class="customerDist">
         <div class="div-2">
           <div class="column">
             <div class="div-3">
@@ -84,27 +81,146 @@
             </div>
           </div>
         </div>
-      </div>
+    </section>
         
     </div>
+    <section class="company-page" id="company">
+        <div>
+            <h1 class="com-text">Company's Product</h1>
+        </div>
+        <div class="com-img">
+            <a href="table_product.html">
+                <img class="com-img-1" src="images/office-supplies.png" alt="image1">
+            </a>
+            <a href="table_product.html">
+                <img class="com-img-2" src="images/furniture.png" alt="image2">
+            </a>
+            <a href="table_product.html">
+                <img class="com-img-3" src="images/technology.png" alt="image3">
+            </a>
+        </div>
+    </section>
 
+    <section id="geo">
+        <div class="geographic-page">
+            <div>
+                <h1 class="geo-text">Customer Geographic</h1>
+            </div>
+            <div class="geo-img">
+                <a href="table_product.html">
+                    <img class="geo-img-1" src="images/geographic.png" alt="image4">
+                </a>
+            </div>
+            <div>
+                <p class="geo-text-1">Reveals a significant concentration in <b>California</b> with approx 1.012 customers.</p>
+            </div>
+            <div class="geo-button">
+                <a href="table_geo.html">
+                    <button type="button" class="my-button">See More</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cus">
+        <div class="grid-container" style="--bs-columns: 2;">
+            <div class="grid-boxes">
+                <div class="box1">
+                    <div>Standard Class</div>
+                </div>
+                <div class="box2">
+                    <div class="">First Class</div>
+                </div>
+                <div class="box3">
+                    <div class="">Same Day</div>
+                </div>
+                <div class="box4">
+                    <div class="">Second Class</div>
+                </div>
+            </div>
+            
+            <div>
+                <h1 class="">Customer Distribution</h1>
+                <p>Reveals a significant concentration in California with approx 1.012 customers.</p>
+            </div>
+            <div class="cus-button">
+                <a href="table_cust.html">
+                    <button type="button" class="my-button">See More</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="form-section">
+            <div class="container flex-space-between">
+                <h2>Have <br>Questions or <br>Suggestions?</h2>
+                <form id="contactForm" action="" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email address..." required>
+                    <textarea id="message" name="message" placeholder="Write here..." required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <section>
+            <h1 class="footer-text">Semarang 13</h1>
+            <div class="footer-grid">
+                <div class="footer-content">
+                    <h4>Project Leader</h4>
+                    <p>Faadhil Arifin</p>
+                  </div>
+                
+                  <div class="footer-content">
+                    <h4>Front End Engineer</h4>
+                    <p>M. Edwin Isa A.</p>
+                    <p>Cakra Bimantara</p>
+                    <p>Khaera Ummah</p>
+                    <p>Adinda Salsabila</p>
+                  </div>
+                
+                  <div class="footer-content">
+                    <h4>Deployment Team</h4>
+                    <p>Fitria Novita Sari</p>
+                    <p>Ulil Amri</p>
+                  </div>
+                
+                  <div class="footer-content">
+                    <h4>Pitch Deck Team</h4>
+                    <p>N. Pramitha W.</p>
+                    <p>Najwa Kamila</p>
+                    <p>Nisa Andini</p>
+                    <p>Nouvia Setiany</p>
+                  </div>
+                
+                  <div class="footer-content">
+                    <h4>Quality Assurance</h4>
+                    <p>M. Dzaky A. S.</p>
+                  </div>
+            </div>
+            <div class="footer-icon">
+                <div class="slack-git">
+                    <a href="https://app.slack.com/">
+                        <img src="images/slack.png" alt="slack" class="slack-img">
+                    </a>
+                    <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-semarang-13">
+                        <img src="images/github.png" alt="github" class="github-img">
+                    </a>
+                </div>
+                <div class="msib">
+                    <a href="https://kampusmerdeka.kemdikbud.go.id/">
+                        <img src="images/msib.png" alt="msib" class="msib-img">
+                    </a>
+                </div>
+            </div>        
+        </section>
+    </div>
+    <script src="script/form-notif.js"></script>
 </body>
 
 <footer>
-        <div class="footer-content">
-            <div class="text-footer">
-                <h5> Semarang 13 </h5>
-            </div>
-            
-            <div class="list-footer">
-                <ul style="list-style: none;">
-                    <li><a href="dashboard.html" class="ds"> Dashboard </a></li>
-                    <li><a href="team.html" class="team"> Our Team </a></li>
-                    <li><a href="github.com" class="github"> Github </a></li>
-                </ul>
-            </div>
-        </div>
-        
         <div class="parent-copyright">
             <div>
                 <p>

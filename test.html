@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Notification</title>
+    <style>
+        .form-section {
+            background-color: #DFE3F9;
+            height: 500px;
+            padding: 2rem;
+            padding-top: 80px;
+        }
+        
+        .flex-space-between {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            margin-bottom: auto;
+            font-size: 200%;
+            padding: 15px;
+        }
+        
+        form {
+            flex-direction: column;
+            padding: 0px 25px;
+        }
+        
+        input[type="email"],
+        textarea {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 5px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+        }
+        
+        textarea {
+            height: 340px;
+        }
+        
+        input[type="submit"] {
+            background-color: #3E51B8;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            width: 100%;
+            padding: 10px;
+            margin: 0px 5px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #5960E6;
+        }
+        
+        .container {
+            background-image: linear-gradient(to left, #8A94EB, #5960E6);
+            width: 800px;
+            height: 450px;
+            margin: auto;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #notification {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-align: center;
+            display: none; /* Initially hidden */
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <section id="form">
+        <div class="form-section">
+            <div class="container flex-space-between">
+                <h2>Have <br>Questions or <br>Suggestions?</h2>
+            
+                <form id="contactForm" action="" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email address..." required>
+            
+                    <textarea id="message" name="message" placeholder="Write here..." required></textarea>
+            
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="notification" class="hidden">Your email has been sent successfully!</div>
+        </div>
+    </section>
+
+    <script src="script/form-notif.js"></script>
+</body>
+</html>
