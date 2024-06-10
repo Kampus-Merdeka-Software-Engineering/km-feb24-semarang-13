@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Superstore Dashboard Version 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Header Add On -->
+        <header class="header_part">
+            <div class="container2">
+                <div class="nav-img">
+                    <a href="/index.html">
+                        <img class="nav-img-1" src="images/logo-revou.png" alt="RevoU Semarang 13">
+                    </a>
+                </div>
+                <div class="nav-text">
+                    <a class="nav-text" href="/index.html"><h3><i>Semarang 13</i></h3></a>
+                </div>
+            </div>
+            <div class="container3">
+                <ul>
+                    <li><b><u><a href="/V2/dashboard.html">Dashboard</a></u></b></li>
+                    <li><a href="/table_product.html">Products</a></li>
+                    <li><a href="/table_geo.html">Geography</a></li>
+                    <li><a href="/table_cust.html">Customer</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <!-- Card Box -->
+            <div class="cardBox">
+                <!-- 1 -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">$560.31M</div>
+                        <div class="cardName">Total Revenue</div>
+                    </div>
+                    <div class="iconBx"> 
+                        <ion-icon name="pie-chart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">9.768</div>
+                        <div class="cardName">Total Orders</div>
+                    </div>
+                    <div class="iconBx"> 
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">793</div>
+                        <div class="cardName">Members</div>
+                    </div>
+                    <div class="iconBx"> 
+                        <ion-icon name="person-add-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">$4.25B</div>
+                        <div class="cardName">Total Profit</div>
+                    </div>
+                    <div class="iconBx"> 
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="graphBox">
+                <!-- Box Column 1 -->
+                <!-- Line chart -->
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <!-- Geo chart -->
+                <div class="box">
+                    <canvas id="geo"></canvas>
+                </div>
+                
+
+                <!-- Box Column 2 -->
+                <!-- Bar Chart -->
+                <div class="box">
+                    <canvas id="barchart"></canvas>
+                </div>
+                
+                <!-- Column Chart -->
+                <div class="box">
+                    <canvas id="columnchart"></canvas>
+                </div>
+
+            <!-- Data List -->
+            <!-- <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Payment</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="Status Delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Import Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- Import Chart JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+        <script src="my_chart.js"></script>
+        <script src="barchart.js"></script>
+        <script src="columnchart.js"></script>
+
+        <!-- Geo Chart -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
+        <script src="geo.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        
+        <script>
+            // Toggle Menu
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+
+            toggle.onclick = function(){
+                navigation.classList.toggle('active');
+                main.classList.toggle('active');
+            }
+
+            // Menambahkan Hovered Class dalam item yang dipilih
+            let list = document.querySelectorAll('.navigation li');
+            function activeLink(){
+                list.forEach((item) =>
+                item.classList.remove('hovered'));
+                this.classList.add('hovered');
+            }
+            list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+        </script>
+    </body>
+</html>

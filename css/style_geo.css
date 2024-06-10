@@ -227,10 +227,17 @@ b{
     text-decoration: none;  
 }
 
-ul > li > a:hover {
+ul>li>a:hover {
     color: #FFDE3D;
 }
 
+ul>li>b>u{
+    color: #FFDE3D;
+}
+
+ul>li>b>u>a{
+    color: #FFDE3D;
+}
 .content {
     text-align: center;
 }
