@@ -3,6 +3,7 @@
     padding: 0;
     outline: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); 
 
 html {
     scroll-behavior: smooth;
@@ -107,12 +108,6 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
-    font-size: 35px;
-    color: #111;
-    font-weight: 600;
-}
-
 h4 {
     font-size: 30px;
     color: #111;
@@ -133,14 +128,6 @@ h6 {
 p {
     font-size: 14px;
     color: #111;
-}
-
-.ptb-50 {
-    padding: 50px 0px;
-}
-
-.mtb-15 {
-    margin: 15px 0;
 }
 
 
@@ -173,18 +160,6 @@ p {
 
 
 
-/* ==== Header  = Start ===== */
-.header_part {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #5960E6, #8E99EB);
-    padding: 5px 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
 
 .container-logo{
     display: flex;
@@ -197,36 +172,23 @@ p {
     margin: 0;
 }
 
-.header_part img {
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 10px; /* Tambahkan margin kanan untuk memberi jarak di antara img dan h5 */
-}
-
 ul {
     display: flex;
-    justify-content: flex-end; /* Menggeser ul ke kanan */
-    align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 li {
+    padding: 0 7px;
     list-style: none;
 }
 
 a {
-    padding: 0 7px;
     color: white;
     text-decoration: none;
 }
-
-b{
-    padding: 0 7px;
-    color: white;
-    text-decoration: none;  
+h3{
+    font-weight: bold;
+    font-size: 20px;
 }
-
 ul>li>a:hover {
     color: #FFDE3D;
 }
@@ -238,9 +200,60 @@ ul>li>b>u{
 ul>li>b>u>a{
     color: #FFDE3D;
 }
+
 .content {
     text-align: center;
 }
+.container3{
+    margin-right: 50px;
+}
+
+
+/* Add On Header */
+.header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #5960E6, #8E99EB);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+  
+.container2{
+    display: flex;
+}
+  
+.nav-img{
+    display: flex;
+    justify: center;
+    align-items: center;
+    padding-left: 75px;
+    text-align: center;     /* Ensure text inside is centered */
+      /* padding-top: 25px;
+      padding-left: 80px;
+      padding-right: 15px;
+      padding-bottom: 15px; */
+  }
+  
+  .nav-img-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+      width: 65px;
+  }
+  
+  .nav-text{
+      /* padding-top: 15px; */
+      display: flex;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      justify-content: center; /* Center horizontally */
+      align-items: center;    /* Center vertically */
+      text-align: center;     /* Ensure text inside is centered */
+  } 
+
 /* ==== Header  = End ===== */
 
 

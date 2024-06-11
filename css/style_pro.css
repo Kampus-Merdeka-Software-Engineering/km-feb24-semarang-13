@@ -107,11 +107,7 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
-    font-size: 35px;
-    color: #111;
-    font-weight: 600;
-}
+
 
 h4 {
     font-size: 30px;
@@ -174,40 +170,22 @@ p {
 
 
 /* ==== Header  = Start ===== */
-.header_part {
-    background: linear-gradient(to right, #5960E6, #8E99EB);
-    padding: 5px 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-.header_part h5 {
-    color: #ffffff;
-    padding: 18px;
-}
-
-.header_part img {
-    float: left;
-    height: 60px;
-    border-radius: 50%;
-}
-
 ul {
     display: flex;
 }
 
 li {
+    padding: 0 7px;
     list-style: none;
 }
 
 a {
-    padding: 0 7px;
     color: white;
     text-decoration: none;
 }
-
+h3{
+    font-size: 20px;
+}
 ul>li>a:hover {
     color: #FFDE3D;
 }
@@ -223,6 +201,59 @@ ul>li>b>u>a{
 .content {
     text-align: center;
 }
+.container3{
+    margin-right: 50px;
+}
+
+
+/* Add On Header */
+.header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #5960E6, #8E99EB);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+  
+.container2{
+    display: flex;
+}
+  
+.nav-img{
+    display: flex;
+
+    justify: center;
+    align-items: center;
+    padding-left: 75px;
+    text-align: center;     /* Ensure text inside is centered */
+      /* padding-top: 25px;
+      padding-left: 80px;
+      padding-right: 15px;
+      padding-bottom: 15px; */
+  }
+  
+  .nav-img-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+      width: 65px;
+  }
+  
+  .nav-text{
+      /* padding-top: 15px; */
+      display: flex;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      justify-content: center; /* Center horizontally */
+      align-items: center;    /* Center vertically */
+      text-align: center;     /* Ensure text inside is centered */
+  } 
+
+
+
 /* ==== Header  = End ===== */
 
 

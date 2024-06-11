@@ -3,6 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Superstore Dashboard Version 2</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="Superstore Dashboard Semarang 13">
+        <link rel="icon" href="/images/logo-new.png">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -11,11 +14,11 @@
             <div class="container2">
                 <div class="nav-img">
                     <a href="/index.html">
-                        <img class="nav-img-1" src="images/logo-revou.png" alt="RevoU Semarang 13">
+                        <img class="nav-img-1" src="/images/logo-new.png" alt="RevoU Semarang 13">
                     </a>
                 </div>
                 <div class="nav-text">
-                    <a class="nav-text" href="/index.html"><h3><i>Semarang 13</i></h3></a>
+                    <a class="nav-text-1" href="/index.html"><h3><i>Semarang 13</i></h3></a>
                 </div>
             </div>
             <div class="container3">
@@ -80,11 +83,19 @@
                 <!-- Box Column 1 -->
                 <!-- Line chart -->
                 <div class="box">
+                    <div style="margin-bottom: 30px;">
+                        <h2>Monthly Sales Performance</h2>
+                        <p>Sales performance over 4 years based on the monthly sales.</p>
+                     </div>
                     <canvas id="myChart"></canvas>
                 </div>
 
                 <!-- Geo chart -->
                 <div class="box">
+                    <div style="margin-bottom: 30px;">
+                        <h2>Sales by State</h2>
+                        <p>The distribution of consumer across various states based on the number of orders.</p>
+                     </div>
                     <canvas id="geo"></canvas>
                 </div>
                 
@@ -92,11 +103,19 @@
                 <!-- Box Column 2 -->
                 <!-- Bar Chart -->
                 <div class="box">
+                    <div style="margin-bottom: 30px;">
+                        <h2>Sales by Segment Customers</h2>
+                        <p>Total sale based on segmentation.</p>
+                     </div>
                     <canvas id="barchart"></canvas>
                 </div>
                 
                 <!-- Column Chart -->
                 <div class="box">
+                    <div style="margin-bottom: 30px;"s>
+                        <h2>Ship Mode</h2>
+                        <p>The most commonly used shipping mode based on customer preferences.</p>
+                     </div>
                     <canvas id="columnchart"></canvas>
                 </div>
 
