@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 body{
   font-family: poppins;
   margin: 0;
@@ -10,6 +12,12 @@ body{
 }
 :root{
   scroll-behavior: smooth;
+}
+
+.nav-text > a {
+  padding: 0 7px;
+  color: white;
+  text-decoration: none;
 }
 
 a > button {
@@ -78,21 +86,32 @@ ul > li > a:hover {
 }
 
 .nav-img{
-    padding-top: 25px;
+  display: flex;
+  justify: center;
+  align-items: center;
+  padding-left: 80px;
+  
+  text-align: center;     /* Ensure text inside is centered */
+    /* padding-top: 25px;
     padding-left: 80px;
     padding-right: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 15px; */
 }
 
 .nav-img-1{
-    width: 40px;
+    margin-top:3px;
+    width: 65px;
 }
 
 .nav-text{
-    padding-top: 15px;
+    /* padding-top: 15px; */
+    display: flex;
     color: white;
     font-size: 15px;
     text-decoration: none;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    text-align: center;     /* Ensure text inside is centered */
 } 
 
 .home-page{
@@ -162,7 +181,7 @@ ul > li > a:hover {
 .com-text{
     text-align: center;
     margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .com-img{
@@ -191,7 +210,7 @@ ul > li > a:hover {
 }
 
 .geographic-page{
-  padding-top: 40px;
+
   padding-left: 50px;
   padding-right: 50px;
   height: 650px;
@@ -199,7 +218,7 @@ ul > li > a:hover {
 }
 
 .geo-text{
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -252,10 +271,12 @@ ul > li > a:hover {
 }
 
 .customerDist{
-  padding:140px 120px 140px 120px;
+  padding:100px 60px 100px 60px;
+  background-color: white;
 }
 
 .div-2 {
+  padding: 50px 60px 50px 60px;
   gap: 20px;
   display: flex;
 }
@@ -296,11 +317,11 @@ ul > li > a:hover {
 }
 .div-4 {
   font-family: Poppins, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #3e51b8;
-  padding: 429px 14px 41px;
+  padding: 160px 14px 41px;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;    /* Center vertically */
@@ -308,7 +329,7 @@ ul > li > a:hover {
 }
 @media (max-width: 991px) {
   .div-4 {
-    padding: 200px 12px 12px 12px;
+    padding: 170px 12px 12px 12px;
     display: flex;
     font-size: 20px;
       justify-content: center; /* Center horizontally */
@@ -318,14 +339,14 @@ ul > li > a:hover {
 }
 .div-5 {
   font-family: Poppins, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #d8daef;
   margin-top: 25px;
   align-items: center;
   text-align: center;
-  padding: 91px 60px 21px;
+  padding: 30px 60px 21px;
 }
 @media (max-width: 991px) {
   .div-5 {
@@ -361,11 +382,11 @@ ul > li > a:hover {
 }
 .div-7 {
   font-family: Poppins, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #b1b9e0;
-  padding: 293px 20px 41px;
+  padding: 60px 20px 41px;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;    /* Center vertically */
@@ -379,12 +400,12 @@ ul > li > a:hover {
 }
 .div-8 {
   font-family: Poppins, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #8592ca;
   margin-top: 25px;
-  padding: 207px 20px 41px;
+  padding: 110px 20px 41px;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;    /* Center vertically */
@@ -431,14 +452,14 @@ ul > li > a:hover {
 @media (max-width: 991px) {
   .div-10 {
     max-width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
   }
 }
 .div-11 {
   font-family: Poppins, sans-serif;
-  margin-top: 76px;
-  font-size: 25px;
+  margin-top: 40px;
+  font-size: 14px;
   text-align: justify;
 }
 @media (max-width: 991px) {
@@ -454,12 +475,12 @@ ul > li > a:hover {
   border-radius: 25px;
   background-color: #004fac;
   align-self: start;
-  margin-top: 45px;
+  margin-top: 30px;
   color: #fff;
   text-align: center;
   justify-content: center;
-  padding: 20px 18px;
-  font-size: 25px;
+  padding: 13px 11px;
+  font-size: 12px;
 }
 @media (max-width: 991px) {
   .div-12 {
@@ -533,7 +554,7 @@ footer{
   background-color: #DFE3F9;
   height: 500px;
   padding: 2rem;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .flex-space-between{
@@ -551,7 +572,6 @@ h2 {
 
 form {
   flex-direction: column;
-  padding: 0px 25px;
 }
 
 input[type="email"],

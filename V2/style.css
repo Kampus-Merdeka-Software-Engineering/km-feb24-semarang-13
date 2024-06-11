@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root
@@ -26,20 +26,30 @@ body
 }
 
 /* header */
+a,
+a:hover {
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
 ul {
     display: flex;
 }
 
 li {
+    padding: 0 7px;
     list-style: none;
 }
 
 a {
-    padding: 0 7px;
     color: white;
     text-decoration: none;
 }
-
+h3{
+    font-size: 20px;
+}
 ul>li>a:hover {
     color: #FFDE3D;
 }
@@ -77,26 +87,33 @@ ul>li>b>u>a{
 }
   
 .nav-img{
-    padding-top: 25px;
+    display: flex;
+    align-items: center;
     padding-left: 75px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-}
+    text-align: center;     /* Ensure text inside is centered */
+      /* padding-top: 25px;
+      padding-left: 80px;
+      padding-right: 15px;
+      padding-bottom: 15px; */
+  }
+  
+  .nav-img-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+      width: 65px;
+  }
+  
+  .nav-text{
+      /* padding-top: 15px; */
+      display: flex;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      justify-content: center; /* Center horizontally */
+      align-items: center;    /* Center vertically */
+      text-align: center;     /* Ensure text inside is centered */
+  } 
 
-.nav-img-1{
-    width: 40px;
-}
-
-.nav-text{
-    font-family: poppins;
-    padding-top: 18px;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-} 
-a h3 i{
-    font-family: poppins;
-}
 /* Batas Kode Header */
 
 .container
