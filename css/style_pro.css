@@ -107,11 +107,7 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
-    font-size: 35px;
-    color: #111;
-    font-weight: 600;
-}
+
 
 h4 {
     font-size: 30px;
@@ -174,26 +170,6 @@ p {
 
 
 /* ==== Header  = Start ===== */
-.header_part {
-    background: linear-gradient(to right, #5960E6, #8E99EB);
-    padding: 5px 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-.header_part h5 {
-    color: #ffffff;
-    padding: 18px;
-}
-
-.header_part img {
-    float: left;
-    height: 60px;
-    border-radius: 50%;
-}
-
 ul {
     display: flex;
 }
@@ -223,6 +199,46 @@ ul>li>b>u>a{
 .content {
     text-align: center;
 }
+.container3{
+    margin-right: 50px;
+}
+
+
+/* Add On Header */
+.header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #5960E6, #8E99EB);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+  
+.container2{
+    display: flex;
+}
+  
+.nav-img{
+margin-top: 10px;
+    padding-left: 75px;
+margin-bottom: 10px;
+
+}
+
+.nav-img-1{
+    width: 50px;
+}
+
+.nav-text{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+} 
+
+
+
 /* ==== Header  = End ===== */
 
 
